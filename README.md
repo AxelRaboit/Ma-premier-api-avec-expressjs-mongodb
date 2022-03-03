@@ -4,6 +4,7 @@ npm init
 ```
 
 ## Dans package.json
+Permet d'utiliser l'importation moderne
 ```
 "type": "module"
 ```
