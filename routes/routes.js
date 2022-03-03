@@ -19,7 +19,7 @@ router.get('/', getRoot)
 //Route Test pour récuperer des informations
 router.get('/test', getTest)
 
-//Route Pour poster des informations
+//Route Test pour poster des informations
 router.post('/test', postTest)
 
 //Route pour créer une room
