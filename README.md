@@ -18,19 +18,21 @@ npm install dotenv@8.2.0 express@4.17.1 mongoose@5.10.7
 npm install -D nodemon@2.0.4
 ```
 
-## Ajout d'un script dans le fichier package.json
+## Ajout de scripts dans le fichier package.json
 
 ```
-"scripts": {
-    "dev": "nodemon server.js"
+  "scripts": {
+    "watch": "nodemon server.js",
+    "start": "node server.js"
   },
 ```
 Pour pouvoir executer la commande suivante
 ```shell
-npm run dev
+npm run start
+npm run watch
 ```
 ## Demarrer le server via nodemon
 ```shell
-npm run dev
+npm run watch
 ```
 (Cette commande est un alias de: nodemon server.js, que nous avons configuré dans le package.json)

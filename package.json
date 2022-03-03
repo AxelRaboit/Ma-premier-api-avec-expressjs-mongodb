@@ -4,7 +4,8 @@
   "description": "Suivi du tutoriel de Antho Welc à propos de la création d'un crud dans une api sous node js",
   "main": "server.js",
   "scripts": {
-    "dev": "nodemon server.js"
+    "watch": "nodemon server.js",
+    "start": "node server.js"
   },
   "author": "AxelR",
   "license": "ISC",
