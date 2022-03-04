@@ -10,6 +10,12 @@ import {
     deleteRoom
 } from '../controllers/roomController.js';
 
+// Path avec ES module pour faire fonctionner filename, dirname, etc... avec l'utilisation des imports moderne
+import path, { dirname } from 'path'
+import { fileURLToPath } from 'url'
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
+
 //Creation du router via express
 const router = express.Router();
 
@@ -23,7 +29,6 @@ router.get('/api/test', (req,res) => {
         name: 'Hello World from json data'
     })
 })
-
 
 //Route Test pour récuperer des informations
 router.get('/api/test', getTest)
